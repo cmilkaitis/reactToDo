@@ -6,11 +6,15 @@ var ReactDOM = require('react-dom');
 class TodoComponent extends React.Component{
     render(){
         return(
-            <h1>Helloooooooooo</h1>
+            <div>
+                <h1>Helloooooooooo</h1>
+                <p>net ninja</p>
+                <p>{this.props.msg}</p>
+            </div>
         );
     }
 };
 
-//
+//Add to html
 
-ReactDOM.render(<TodoComponent/>, document.getElementById('todo-wrapper'));
+ReactDOM.render(<TodoComponent msg='The ninja likes cheese'/>, document.getElementById('todo-wrapper'));
