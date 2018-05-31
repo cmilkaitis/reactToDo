@@ -3,10 +3,14 @@ var ReactDOM = require('react-dom');
 
 //Create component
 
-var TodoComponent = React.createClass({
-    render:function(){
+class TodoComponent extends React.Component{
+    render(){
         return(
             <h1>Helloooooooooo</h1>
         );
     }
-});
+};
+
+//
+
+ReactDOM.render(<TodoComponent/>, document.getElementById('todo-wrapper'));
